@@ -26,6 +26,6 @@ out.plot <- ggplot(data.in.melted,(aes(x=PatientID, y=value))) +
     ggtitle(paste("File: ", options[1]))
 #options1 is the variable that has the filename
 	
-# save pdf based on input file name
-savename <- paste0(options[1],".pdf")
+# save png based on input file name
+savename <- paste0(options[1],".png")
 ggsave(out.plot, file=savename, width = 12, height = 8)
