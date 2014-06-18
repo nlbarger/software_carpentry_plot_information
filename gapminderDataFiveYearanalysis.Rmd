@@ -28,3 +28,4 @@ Make a 2 histograms of global life expectancy using ggplot. One with the default
 Commit your changes and push them to github.
 
 Compile the final Rmd file to html, make sure it looks ok, and then commit this html file as well (should be in your working directory) and push everything to github.
+
