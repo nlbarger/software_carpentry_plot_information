@@ -1,13 +1,7 @@
 
-Move into your working directory (the one you have been working with for git and github)
-`R data<- read.delim("gapminderDataFiveYear.txt")`
-Take a look at the file (you can re-download it here), and pick three countries you are interested in.
-
-Write an Rmd script to load the data file, select all the data for that country (hint, use the subset()
-
 `r IIIdata<- subset(data, country=="Mali" | country=="Oman" | country=="Italy")`
 
-function), and use ggplot make a three scatter plots (one for each country) that has year on the x-axis and GDP on the y axis. Make sure you load all the libraries you might need (ggplot2, reshape2, etc). Describe any trends you see for each country using markdown text.
+Mali has lower GDP consistently than OMan
 
 `r ggplot(data=IIIdata, aes(x=year, y=gdpPercap), color = country) + geom_point(aes(shape=country))`
 
